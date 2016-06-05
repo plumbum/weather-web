@@ -22,3 +22,10 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+# Execution file
+weather-web
+
+# Intellij Idea files
+*.iml
+.idea
