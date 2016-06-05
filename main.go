@@ -28,10 +28,10 @@ func main() {
 		log.Print(err)
 	}
 
-	tmr := time.NewTimer(time.Second * 3)
+	ticker := time.NewTicker(time.Second * 3)
 
 	go func() {
-		for t := range tmr.C {
+		for t := range ticker.C {
 			env, err := bme.Readenv()
 			if err != nil {
 				log.Print("[ERROR] %v", err)
