@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>BME280</title>
+	<style>
+		p { font-size: 16pt; }
+	</style>
+</head>
+<body>
+<h1>BME280</h1>
+<p>Temperature: {{.Temp | printf "%.2f"}}&deg;C</p>
+<p>Humidity: {{.Hum | printf "%.2f"}}%</p>
+<p>Pressure: {{.MmHg | printf "%.2f"}}&nbsp;mmHg</p>
+</body>
+</html>
+
